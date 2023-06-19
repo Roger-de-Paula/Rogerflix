@@ -13,7 +13,7 @@ const SearchMovies: React.FC<props> = (props) => {
 
     return (
         <>
-            <h1>RogerFlix</h1>
+            <h1 id="logotype">Cinemaze</h1>
             <div className="search">
             <input
             placeholder="Search for movies "

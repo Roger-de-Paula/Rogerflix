@@ -30,7 +30,7 @@ interface MovieCardProps {
                     </div>
                 ) : (
                     <div className="empty">
-                        <h2>No movies found</h2>
+                        <h2>No movies found with this title</h2>
                     </div>
                 )}
             </>

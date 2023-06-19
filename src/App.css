@@ -10,6 +10,11 @@
 :root {
   --font-roboto: "Roboto Slab", serif;
   --font-raleway: "Raleway", sans-serif;
+
+  /* colors */
+  --color-primary: #ffb043;
+  --color-secondary: #f6d080;
+  --color-tertiary: #e6e6e6;
 }
 
 body {
@@ -26,18 +31,20 @@ body {
   flex-direction: column;
 }
 
-h1 {
+#logotype {
   font-size: 3rem;
   letter-spacing: 0.9px;
   background: linear-gradient(
     90deg,
-    rgba(249, 211, 180, 1) 0%,
-    rgba(249, 211, 180, 0) 100%
+    rgb(255, 176, 67) 0%,
+    rgb(210, 162, 122) 50%,
+    rgba(80, 80, 80, 0) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
+  user-select: none;
 }
 
 .search {
@@ -48,7 +55,7 @@ h1 {
   align-items: center;
   justify-content: center;
 
-  padding: 1.5rem 1.75rem;
+  padding: 1.25rem 1.75rem;
   border-radius: 3rem;
   background: #1f2123;
   -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
@@ -64,7 +71,7 @@ h1 {
   padding-right: 1rem;
 
   outline: none;
-  color: #a1a1a1;
+  color: #e6e6e6;
   background: #1f2123;
 }
 
@@ -91,7 +98,7 @@ h1 {
 
 .empty {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 10rem;
 
   display: flex;
   justify-content: center;
@@ -99,14 +106,14 @@ h1 {
 }
 
 .empty h2 {
-  font-size: 1.25rem;
-  color: #f9d3b4;
+  font-size: 2rem;
+  color: var(--color-secondary);
+  font-weight: 500;
   font-family: var(--font-raleway);
 }
 
 .container {
   width: 100%;
-  margin-top: 3rem;
 
   display: flex;
   justify-content: center;
@@ -135,7 +142,7 @@ h1 {
   width: 100%;
   opacity: 0;
   top: 0;
-  color: #f9d3b4;
+  color: var(--color-secondary);
 }
 
 .movie:hover {
@@ -176,7 +183,7 @@ h1 {
 .movie div:nth-of-type(3) h3 {
   margin-top: 5px;
   font-family: "Roboto Slab", serif;
-  color: #f9d3b4;
+  color: var(--color-secondary);
 }
 
 .movie:hover div:nth-of-type(2) {
